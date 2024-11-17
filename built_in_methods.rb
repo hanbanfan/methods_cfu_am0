@@ -1,56 +1,88 @@
 # SECTION 1: Calling methods on string or integer objects.
-# Run each line of code below (either from this file or in IRB individually).
-# Then, in a ruby comment, write 1-2 sentences describing what is happening, using ALL the involved vocabulary terms you've learned in this lesson so far.
 
-# EXAMPLE
-# The downcase method is called on the string object "Hello World"
-# No arguments are passed; downcase has one clear job which is to lowercase all letters that exist in the String
-# The return value is "hello world"
-"Hello World".downcase
+# The downcase method is called on the string object "Hello World".
+# No arguments are passed; downcase converts all uppercase letters to lowercase.
+# The return value is "hello world".
+puts "Hello World".downcase
 
+# The include? method is called on the string object "Hello World".
+# The argument "Hello" is passed to check if it exists in the string.
+# The return value is true because "Hello" is a substring of "Hello World".
+puts "Hello World".include?("Hello")
 
-"Hello World".include?("Hello")
+# The end_with? method is called on the string object "Hello World".
+# The argument "Hello" is passed to check if the string ends with "Hello".
+# The return value is false because "Hello World" does not end with "Hello".
+puts "Hello World".end_with?("Hello")
 
+# The end_with? method is called on the string object "Hello World".
+# The argument "rld" is passed to check if the string ends with "rld".
+# The return value is true because "Hello World" ends with "rld".
+puts "Hello World".end_with?("rld")
 
-"Hello World".end_with?("Hello")
+# The even? method is called on the integer object 12.
+# No arguments are passed; even? checks if the integer is even.
+# The return value is true because 12 is an even number.
+puts 12.even?
 
-
-"Hello World".end_with?("rld")
-
-
-12.even?
-
-
-18.next
-
+# The next method is called on the integer object 18.
+# No arguments are passed; next returns the integer that is 1 greater than the current value.
+# The return value is 19.
+puts 18.next
 
 
 # SECTION 2: Calling methods on variables assigned to strings.
-# Declare 2 variables assigned to string objects.
-# Call a different built-in Ruby method on each of your variables. 
-# https://ruby-doc.org/core-3.1.0/String.html
-# Include comments above each method call explaining the impact and return value of that method.
 
-# EXAMPLE
-# The start_with? method is called on the first_name variable, which stores the string object "Jeff". 
-# The start_with? method returns true if the data in the first_name variable starts with the argument passed in.
-# In this example, the return value is true, because "Jeff" does start with "J".
-# The puts command prints the return value of the start_with? method (true) to the console.
-first_name = "Jeff"
-puts first_name.start_with?("J")
+# Declare a variable assigned to a string object.
+greeting = "Hello there!"
 
+# The upcase method is called on the greeting variable.
+# It converts all the letters in the string to uppercase.
+# The return value is "HELLO THERE!".
+puts greeting.upcase
+
+# Declare another variable assigned to a string object.
+farewell = "Goodbye!"
+
+# The length method is called on the farewell variable.
+# It counts the number of characters in the string, including spaces and punctuation.
+# The return value is 8.
+puts farewell.length
 
 
 # SECTION 3: Calling methods on variables assigned to integers.
-# Declare 2 variables assigned to integer objects.
-# Call a different built-in Ruby method on each of your variables. 
-# https://ruby-doc.org/core-3.1.0/Integer.html
-# Include comments above each method call explaining the impact and return value of that method.
 
+# Declare a variable assigned to an integer.
+number = 42
+
+# The odd? method is called on the number variable.
+# It checks if the integer is odd.
+# The return value is false because 42 is not an odd number.
+puts number.odd?
+
+# Declare another variable assigned to an integer.
+age = 29
+
+# The pred method is called on the age variable.
+# It returns the integer that is 1 less than the current value.
+# The return value is 28.
+puts age.pred
 
 
 # SECTION 4: Calling methods on variables assigned to arrays.
-# Declare 2 variables assigned to arrays.
-# Call a different built-in Ruby method on each of your variables. 
-# https://ruby-doc.org/core-3.1.0/Array.html
-# Include comments above each method call explaining the impact and return value of that method.
+
+# Declare a variable assigned to an array.
+colors = ["red", "blue", "green"]
+
+# The first method is called on the colors array.
+# It retrieves the first element in the array.
+# The return value is "red".
+puts colors.first
+
+# Declare another variable assigned to an array.
+numbers = [1, 2, 3, 4, 5]
+
+# The reverse method is called on the numbers array.
+# It reverses the order of the elements in the array.
+# The return value is [5, 4, 3, 2, 1].
+puts numbers.reverse
